@@ -22,6 +22,7 @@
 
   .app__full-banner-image {
     margin-block: auto;
+    margin: 2rem;
 
     img {
       max-width: 600px;
@@ -36,6 +37,10 @@
     width: 300px;
     margin-block: auto;
     max-height: 400px;
+
+    @media screen and (max-width: 1000px) {
+      margin: 2rem;
+    }
 
     .head-text {
       color: var(--white-color);
