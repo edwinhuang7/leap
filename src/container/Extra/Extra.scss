@@ -1,0 +1,27 @@
+.app__extra {
+  flex: 1;
+  width: 100%;
+  flex-direction: row;
+  background-color: white;
+  padding: 0px 20%;
+
+  @media screen and (max-width: 900px) {
+    padding: 1rem 1rem;
+  }
+}
+
+.app__full-banner {
+  margin-top: 100px;
+}
+
+.p-text-responsive {
+  @media screen and (max-width: 1200px) {
+    width: 300px !important;
+  }
+}
+
+.img-responsive {
+  @media screen and (max-width: 1200px) {
+    padding: 0px !important;
+  }
+}

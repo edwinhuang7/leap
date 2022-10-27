@@ -1,38 +1,32 @@
-import { motion } from "framer-motion";
 import "./About.scss";
-import { AppWrap } from "../../wrapper";
 import { images } from "../../constants";
 
 const info = [
-  { title: "Front-end development", description: "Self-taught aspiring web developer, focused on front-end.", imgUrl: images.about05 },
-  { title: "Design empathy", description: "I have 5 years of design experience in academic and professional settings.", imgUrl: images.about01 },
-  { title: "Back-end development", description: "Some experience using python frameworks such as Flask", imgUrl: images.about06 },
-  { title: "Database analysis", description: "Experience in querying and presenting data through Sqlite.", imgUrl: images.about02 },
+  { title: "Safe Documents", description: "LawConnect stores its data on servers provided by Amazon Web Services and is safer than email.", imgUrl: images.safeDocs },
+  { title: "Work Remotely", description: "You can sign in to LawConnect and view,collaborate and share your documents from anywhere..", imgUrl: images.workRemote },
+  { title: "Greater Collaboration", description: "Collaborate on documents with clients, lawyers and other parties with LawConnect's Comment and Reply.", imgUrl: images.greaterCollab },
 ];
 const About = () => {
   return (
     <>
-      <br></br>
-      <br></br>
-      <h2 className="large-text">
-        Background in Architecture and design consulting.<br></br> I thrive when translating technical problems into creative solutions<br></br> and passionate about creating user-centric products.
-      </h2>
-      <div className="app__profiles">
-        {info.map((about, index) => (
-          <motion.div whileInView={{ opacity: 1 }} whileHover={{ scale: 1.1 }} transition={{ duration: 0.5, type: "tween" }} className="app__profile-item" key={about.title + index}>
-            <img src={about.imgUrl} alt={about.title} />
-            <h2 className="bold-text" style={{ marginTop: 20 }}>
-              {about.title}
-            </h2>
-            <p className="p-text" style={{ marginTop: 10 }}>
-              {about.description}
-            </p>
-          </motion.div>
-        ))}
+      <div className="app__about">
+        <h2 className="large-text-centered">One Solution Designed to Make Your Firm More Money</h2>
+        <div className="app__profiles">
+          {info.map((about) => (
+            <div className="app__profile-item">
+              <img src={about.imgUrl} alt={about.title} />
+              <h4 className="bold-text" style={{ marginTop: 20 }}>
+                {about.title}
+              </h4>
+              <p className="p-text-black" style={{ marginTop: 10 }}>
+                {about.description}
+              </p>
+            </div>
+          ))}
+        </div>
       </div>
     </>
   );
 };
 
-export default AppWrap(About, "about");
-
+export default About;

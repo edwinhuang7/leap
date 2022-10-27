@@ -1,24 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Heebo&display=swap");
 :root {
-  --font-base: "DM Sans", sans-serif;
-
-  --primary-color: #edf2f8;
-  --secondary-color: #2a29e8;
-  --black-color: #030303;
-  --lightGray-color: #e4e4e4;
-  --gray-color: #6b7688;
-  --brown-color: #46364a;
-  --white-color: #ffffff;
-
-
-  --design1-color:#165f6d;
-  --design2-color:#f5ae46;
-  --design3-color:#f17956;
-  --design4-color:#ca333a;
-  --design5-color:#353a74;
-  --design6-color:#2e537d;
-  --accent-color:#c4dcf6;
+  --font-base: "Heebo", sans-serif;
+  --vividBlue-color: #0e5fe3;
+  --black-color: #191919;
+  --lightGrayishBlue-color: #f6f7f8;
+  --skyBlue-color: #2ab7fe;
+  --darkBlue-color: #0a49af;
+  --white-color: white;
 }
 
 * {

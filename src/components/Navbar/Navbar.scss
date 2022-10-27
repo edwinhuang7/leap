@@ -4,28 +4,22 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
   position: fixed;
   z-index: 3;
+  padding: 1rem 20%;
+
+  @media screen and (max-width: 900px) {
+    padding: 1rem 1rem;
+  }
 }
 
 .app__navbar-logo {
   display: flex;
-  justify-content: flex-start;
   align-items: center;
-
   img {
-    width: 70px;
-    height: 70px;
+    width: 200px;
+    height: auto;
     background-image: none;
-
-    @media screen and (min-width: 2000px) {
-      width: 180px;
-      height: 40px;
-    }
   }
 }
 
@@ -34,13 +28,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
+  color: var(--white-color);
+  margin-bottom: 0px !important;
   list-style: none;
 
   li {
     margin: 0 1rem;
     cursor: pointer;
-
     flex-direction: column;
 
     div {
@@ -48,30 +42,22 @@
       height: 5px;
       background: transparent;
       border-radius: 50%;
-
-      margin-bottom: 5px;
     }
 
     a {
-      color: var(--black-color);
+      color: var(--white-color);
       text-decoration: none;
       flex-direction: column;
-
-      text-transform: uppercase;
       font-weight: 500;
-
       transition: all 0.3s ease-in-out;
-
-      &:hover {
-        color: var(--black-color);
-      }
     }
+  }
 
-    &:hover {
-      div {
-        color: var(--black-color);
-      }
-    }
+  @media screen and (max-width: 1400px) {
+    font-size: 0.6rem;
+  }
+  @media screen and (max-width: 1100px) {
+    font-size: 0.4rem;
   }
 
   @media screen and (max-width: 900px) {
@@ -84,15 +70,15 @@
   height: 35px;
   border-radius: 50%;
   position: relative;
-
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--secondary-color);
 
   svg {
     width: 70%;
     height: 70%;
-    color: var(--black-color);
+    color: var(--white-color);
   }
 
   div {
@@ -101,34 +87,23 @@
     bottom: 0;
     right: 0;
     z-index: 5;
-
     padding: 1rem;
-
-    width: 25%;
+    width: 80%;
     height: 100vh;
-
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     flex-direction: column;
-
-    background: url("../../assets/bgWhite.png");
     background-color: var(--white-color);
     background-size: cover;
     background-repeat: repeat;
-
-    /* top box shadow */
-    box-shadow: 0px 0px 20px rgba(168, 168, 168, 0.15);
+    width: 100vw;
 
     svg {
       width: 35px;
       height: 35px;
-      color: var(--gray-color);
       margin: 0.5rem 1rem;
-
-      &:hover {
-        color: var(--black-color);
-      }
+      color: var(--darkBlue-color);
     }
 
     ul {
@@ -137,7 +112,6 @@
       padding: 0;
       height: 100%;
       width: 100%;
-
       display: flex;
       justify-content: flex-start;
       align-items: flex-start;
@@ -147,25 +121,22 @@
         margin: 1rem;
 
         a {
-          color: var(--gray-color);
+          color: var(--darkBlue-color);
           text-decoration: none;
           font-size: 1rem;
           text-transform: uppercase;
           font-weight: 500;
-
           transition: all 0.3s ease-in-out;
-
-          &:hover {
-            color: var(--secondary-color);
-          }
         }
       }
     }
 
     @media screen and (min-width: 900px) {
+      display: none;
     }
   }
 
   @media screen and (min-width: 900px) {
+    display: none;
   }
 }

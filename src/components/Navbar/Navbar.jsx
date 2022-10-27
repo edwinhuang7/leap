@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
-import { HiMenuAlt4, HiX } from 'react-icons/hi';
-import { motion } from 'framer-motion';
-
-import { images } from '../../constants';
-import './Navbar.scss';
+import React, { useState } from "react";
+import { images } from "../../constants";
+import { HiMenuAlt4, HiX } from "react-icons/hi";
+import { motion } from "framer-motion";
+import "./Navbar.scss";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -14,28 +13,38 @@ const Navbar = () => {
         <img src={images.logo} alt="logo" />
       </div>
       <ul className="app__navbar-links">
-        {['home', 'about', 'work', 'contact'].map((item) => (
-          <li className="app__flex p-text" key={`link-${item}`}>
+        {["For People", "For Businesses", "Contact"].map((item) => (
+          <li className="app__flex p-text">
             <div />
-            <a href={`#${item}`}>{item}</a>
+            <a href="">{item}</a>
           </li>
         ))}
       </ul>
 
+      <div className="app__navbar-logo">
+        <ul className="app__navbar-links">
+          {["Login"].map((item) => (
+            <li className="app__flex p-text" key={`link-${item}`}>
+              <div />
+              <a href="">{item}</a>
+            </li>
+          ))}
+          <motion.div whileHover={{ scale: 0.97 }}>
+            <button className="button">Create Free Account</button>
+          </motion.div>
+        </ul>
+      </div>
+
       <div className="app__navbar-menu">
-        <HiMenuAlt4 className="toggle" onClick={() => setToggle(true)} />
+        <HiMenuAlt4 onClick={() => setToggle(true)} />
 
         {toggle && (
-          <motion.div
-            whileInView={{ x: [300, 0] }}
-            transition={{ duration: 0.85, ease: 'easeOut' }}
-          >
-            {/* change toggle state to false */}
+          <motion.div whileInView={{ x: [300, 0] }} transition={{ duration: 0.85, ease: "easeOut" }}>
             <HiX onClick={() => setToggle(false)} />
             <ul>
-              {['home', 'about', 'work', 'contact'].map((item) => (
+              {["For People", "For Businesses", "Contact"].map((item) => (
                 <li key={item}>
-                  <a href={`#${item}`} onClick={() => setToggle(false)}>
+                  <a href="" onClick={() => setToggle(false)}>
                     {item}
                   </a>
                 </li>
