@@ -1,12 +1,12 @@
 import React from "react";
 import { images } from "../../constants";
-import "./Extra.scss";
+import "./Signing.scss";
 import { motion } from "framer-motion";
 
-const Extra = () => {
+const Signing = () => {
   return (
     <div>
-      <div className="app__extra app__flex">
+      <div className="app__signing app__flex">
         <div className="app__full-banner-item">
           <div className="img-responsive">
             <img src={images.signDocsDesktop} alt="Hero Desktop" />
@@ -25,4 +25,4 @@ const Extra = () => {
   );
 };
 
-export default Extra;
+export default Signing;

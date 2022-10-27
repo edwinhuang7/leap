@@ -20,8 +20,8 @@
 }
 
 .app__profile-item {
-  width: 26%;
-  min-width: 300px;
+  width: 30%;
+  min-width: 200px;
   height: 300px;
   display: flex;
   justify-content: flex-start;
@@ -29,7 +29,6 @@
   flex-direction: column;
   border-width: 0.005px;
   box-shadow: 0 6px 6px rgba(0, 0, 0, 0.15);
-
   border-radius: 5px;
   overflow: hidden;
   margin-top: 3rem;

@@ -1,12 +1,12 @@
 import React from "react";
 import { images } from "../../constants";
-import "./Work.scss";
+import "./Sharing.scss";
 import { motion } from "framer-motion";
 
-const Work = () => {
+const Sharing= () => {
   return (
     <div>
-      <div className="app__work app__flex">
+      <div className="app__sharing app__flex">
         <div className="app__full-banner-item ">
           <div className="app__full-banner-text">
             <p className="large-text">Sharing Documents</p>
@@ -28,4 +28,4 @@ const Work = () => {
   );
 };
 
-export default Work;
+export default Sharing;
