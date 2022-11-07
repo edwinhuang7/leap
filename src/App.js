@@ -1,7 +1,5 @@
 import React from 'react';
-
-import { About, Footer, Header, Sharing, Signing } from './container';
-import { Navbar } from './components';
+import { About, Footer, Header, Sharing, Signing, Navbar } from './components';
 import './App.scss';
 
 const App = () => (

@@ -8,8 +8,9 @@
   z-index: 3;
   padding: 1rem 20%;
 
-  @media screen and (max-width: 900px) {
-    padding: 1rem 1rem;
+  @media screen and (max-width: 500px) {
+    padding: 1rem;
+    background-color: var(--vividBlue-color);
   }
 }
 
@@ -29,7 +30,6 @@
   justify-content: center;
   align-items: center;
   color: var(--white-color);
-  margin-bottom: 0px !important;
   list-style: none;
 
   li {

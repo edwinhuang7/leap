@@ -3,10 +3,10 @@
   width: 100%;
   flex-direction: column;
   display: flex;
-  padding: 4rem 20%;
+  padding: 2rem 20%;
 
-  @media screen and (max-width: 900px) {
-    padding: 6rem 6rem;
+  @media screen and (max-width: 500px) {
+    padding: 1rem 1rem;
   }
 }
 
@@ -15,14 +15,15 @@
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
-  margin-top: 2rem;
+  align-items: center;
+
   width: 100%;
 }
 
 .app__profile-item {
   width: 30%;
   min-width: 200px;
-  height: 300px;
+  height: 270px;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -31,7 +32,12 @@
   box-shadow: 0 6px 6px rgba(0, 0, 0, 0.15);
   border-radius: 5px;
   overflow: hidden;
-  margin-top: 3rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+
+  @media screen and (max-width: 500px) {
+    width: 100%;
+  }
 
   img {
     width: 100%;

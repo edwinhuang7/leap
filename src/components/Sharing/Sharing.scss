@@ -4,9 +4,8 @@
   flex-direction: row;
   background-color: var(--lightGrayishBlue-color);
   padding: 0px 20%;
-
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 400px) {
     padding: 1rem 1rem;
-    flex-direction: column;
+    text-align: center;
   }
 }

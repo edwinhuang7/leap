@@ -9,12 +9,11 @@
   flex: 1;
   width: 100%;
   flex-direction: row;
-  background-color: #0d54cb;
+  background-color: var(--vividBlue-color);
   padding: 0px 20%;
 
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 500px) {
     padding: 1rem 1rem;
-    flex-direction: column;
   }
 }
 
@@ -32,4 +31,12 @@
     object-fit: contain;
     z-index: 1;
   }
+}
+
+.small-screen-logo {
+  display: block;
+}
+
+.large-screen-logo {
+  display: none;
 }
