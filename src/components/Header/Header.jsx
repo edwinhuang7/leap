@@ -1,5 +1,5 @@
 import React from "react";
-// import { images } from "../../constants";
+import { images } from "../../constants";
 import "./Header.scss";
 import { motion } from "framer-motion";
 
@@ -22,12 +22,11 @@ const Header = () => {
           </motion.div>
         </div>
         <div className="app__full-banner-image">
-          {/* <picture>
+          <picture>
             <source srcset={images.heroMobile} media="(max-width: 500px)" />
             <source srcset={images.heroDesktop} media="(max-width: 1500px)" />
-
             <img src={images.heroDesktop} alt="Flowers" />
-          </picture> */}
+          </picture>
         </div>
       </div>
     </div>

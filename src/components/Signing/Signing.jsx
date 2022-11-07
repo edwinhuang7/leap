@@ -9,7 +9,7 @@ const Signing = () => {
       <div className="app__signing app__flex">
         <div className="app__full-banner-item" id="flex-column-normal">
           <div className="app__full-banner-image">
-            {/* <picture>
+            <picture>
               <source
                 srcset={images.signDocsMobile}
                 media="(max-width: 500px)"
@@ -19,7 +19,7 @@ const Signing = () => {
                 media="(max-width: 1500px)"
               />
               <img src={images.signDocsDesktop} alt="Flowers" />
-            </picture> */}
+            </picture>
           </div>
           <div className="app__full-banner-text">
             <p className="large-text">Signing Documents Electronically</p>
